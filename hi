@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>For you, Troy</title>
+<style>
+    body {
+        background: #f7f2ff;
+        font-family: "Helvetica Neue", Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+    }
+    .card {
+        background: white;
+        padding: 40px 50px;
+        border-radius: 18px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        text-align: center;
+        max-width: 420px;
+        animation: fadeIn 1.2s ease-out;
+    }
+    h1 {
+        font-size: 26px;
+        margin-bottom: 15px;
+        color: #6b4ee6;
+    }
+    p {
+        font-size: 18px;
+        color: #444;
+        line-height: 1.6;
+    }
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(20px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+</style>
+</head>
+
+<body>
+<div class="card">
+    <h1>Hi handsome Troy</h1>
+    <p>
+        I’ve been so busy lately,<br>
+        but I haven’t forgotten to think about you.
+    </p>
+</div>
+</body>
+</html>
