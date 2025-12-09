@@ -3,9 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <title>For you, Troy</title>
+
 <style>
     body {
-        background: #f7f2ff;
+        background: #ffe6ef; 
         font-family: "Helvetica Neue", Arial, sans-serif;
         display: flex;
         justify-content: center;
@@ -13,6 +14,7 @@
         height: 100vh;
         margin: 0;
     }
+
     .card {
         background: white;
         padding: 40px 50px;
@@ -20,38 +22,58 @@
         box-shadow: 0 10px 30px rgba(0,0,0,0.1);
         text-align: center;
         max-width: 420px;
-        animation: fadeIn 1.2s ease-out;
+        animation: fadeIn 1s ease-out;
     }
+
     h1 {
         font-size: 26px;
         margin-bottom: 15px;
-        color: #6b4ee6;
+        color: #e05582;
     }
+
     p {
         font-size: 18px;
         color: #444;
         line-height: 1.6;
+        margin-bottom: 25px;
     }
+
+    /* Card fade-in */
     @keyframes fadeIn {
         from { opacity: 0; transform: translateY(20px); }
         to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Cute bounce animation */
+    @keyframes bounce {
+        0% { transform: translateY(0); }
+        40% { transform: translateY(-12px); }
+        60% { transform: translateY(0); }
+        80% { transform: translateY(-6px); }
+        100% { transform: translateY(0); }
+    }
+
+    .bounce-img {
+        animation: bounce 1s ease-out;
     }
 </style>
 </head>
 
 <body>
 <div class="card">
+
     <h1>Hi handsome Troy</h1>
+
     <p>
         I’ve been so busy lately,<br>
         but I haven’t forgotten to think about you.
-        
-        <img src="meme.png" 
-     alt="cute meme" 
-     style="width: 140px; margin-bottom: 25px; border-radius: 12px;">
-
-
     </p>
+
+    <img src="meme.png" 
+         alt="cute meme"
+         class="bounce-img"
+         style="width: 140px; border-radius: 12px;">
+
 </div>
 </body>
 </html>
